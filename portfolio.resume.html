@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style type="text/css">
+  .bg-trans{
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+  }
+  .jumbotron{
+    background-image: url('landscape.jpg');
+    background-size: cover;
+    color: white;
+    height: 600px;
+    padding-top: 200px;
+  }
+
+  .square {
+  height: 20px;
+  width: 20px;
+  background-color: #0000FF;
+  margin-right: 20px;
+
+}
+
+
+
+
+    .container{
+      max-width: 100%;
+      margin: 0px auto;
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+          }
+    .columns{
+      display: flex;
+      padding: 3rem;
+      margin: -5px;
+    }
+    @media(max-width: 600px){
+      .col-1, .col-2, .col-3{
+        width: 100%;
+      }
+      .columns{
+        flex-direction: column;
+      }
+    }
+
+  *, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+.html
+{
+  font-size:100%;
+}
+
+.body
+{
+  -webkit-font-smoothing:antialiased;
+  color:#333332;
+  font-family:Lora, serif;
+  font-size:18px;
+  font-weight:400;
+  line-height:1.4;
+  text-rendering:optimizeLegibility;
+}
+
+.skill-set li:hover
+{
+  background:#3498db;
+}
+
+.h1
+{
+  color:rgba(0,0,0,.75);
+}
+
+.wrapper
+{
+  height:60%;
+}
+
+.left
+{
+  background-color:rgba(0,0,0,.025);
+  border-right:1px solid rgba(0,0,0,.05);
+  float:right;
+  height:60%;
+  margin-left:-1px;
+  min-width:256px;
+  position:fixed;
+  width:33.33%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  
+}
+
+.right
+{
+  float:right;
+  height:100%;
+  position:relative;
+  width:66.66%;
+}
+
+
+.name-hero
+{
+  background:rgba(0,0,0,.001);
+  bottom:0;
+  height:290px;
+  left:0;
+  margin:auto;
+  position:absolute;
+  right:0;
+  top:0;
+  width:85%;
+}
+
+.me-img
+{
+  background:url(kesavan.jpg) no-repeat center center ;
+  background-size:100%;
+  background-position:0px;
+  border-radius:100%;
+  height:200px;
+  margin:0 auto;
+  margin-bottom: 30px;
+  position:relative;
+  width:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border :1px solid #ddd; 
+
+}
+
+.name-hero h1
+{
+  font-family:Open Sans, sans-serif;
+  font-size:1.5em;
+  text-align:center;
+}
+
+.name-hero h1 em
+{
+  color:rgba(0,0,0,.3);
+  font-style:normal;
+  font-weight:700;
+}
+
+.name-hero p
+{
+  color:rgba(0,0,0,.5);
+  font-size:.75em;
+  line-height:1.5;
+  margin:0 8px 0 0;
+  text-align:center;
+}
+
+.name-hero .name-text
+{
+  margin:0 auto;
+  width:85%;
+}
+
+.inner
+{
+  margin:0 auto;
+  max-width:975px;
+  padding:3em;
+}
+
+.inner h1
+{
+  font-size:1.75em;
+}
+
+.inner p
+{
+  color:rgba(0,0,0,.3);
+}
+
+.inner p em
+{
+  color:rgba(0,0,0,.75);
+  font-style:normal;
+}
+
+.inner section
+{
+  margin:100px auto;
+}
+
+ul
+{
+  list-style-type:none;
+  margin-top:-10px;
+  max-width:570px;
+  padding:0;
+}
+
+.skill-set li
+{
+  background:rgba(0,0,0,.75);
+  border-radius:5px;
+  color:#FFF;
+  display:inline-block;
+  list-style:none;
+  margin:15px 15px 0 0;
+  padding:10px;
+  text-align:justify;
+}
+
+@media screen and (max-width: 48em) {
+  .right,.left
+  {
+    float:none;
+    position:relative !important;
+    width:100%;
+    min-height:500px;
+  }
+  .handmade {
+  text-align:center !important;
+  margin-top:0px !important;
+}
+
+@media screen and (max-width: 75em) {
+    body
+{ font-size:16px;}
+}
+
+@media screen and (max-width: 60em) {
+    body
+{ font-size:14px;}
+}
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.handmade {
+  text-align:right;
+  margin-top:100px;
+}
+.handmade em {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.25em;
+  margin-left:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="square">
+          </div>
+
+  <a> <strong>KESAVAN</strong>  /  Full Stack Developer </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_aboutme.html">ABOUT ME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio.resume.html">RESUME</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_project.html" >PROJECTS</a>
+        </li>
+        <li>
+          <a class="nav-link " href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_contact.html" >CONTACT</a>
+        </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+
+
+  </body>
+
+<div class="wrapper clearfix">
+<div class="left">
+    
+    <div class="name-hero">
+      
+      <div class="me-img"></div>
+     
+      <div class="name-text">
+        
+        <h1>KESAVAN <em>VARADHAN</em></h1>
+        <p>No.23, Jalan ks1/19
+             Bandar Parklands, Klang</p>
+        <p>ksvnkesavan55@gmail.com</p> 
+        <p>601 667 80825</p>
+     
+      </div>
+   
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+ <div class="right">
+  
+    <div class="inner">
+      
+      <section>
+        
+        <h1>WORK HISTORY  </h1>
+        <p>June 2016 - Present <em>KAAPPU DOT COM SDN BHD | ICT SPECIALIST</em></p>
+        <p>Implementation of ICT strategies and introduction/implementation of new technologies, system design development and maintenance.
+           Ensure secure, reliable and effective telecommunications facilities also in emergency settings and provide advisory support to safeguard .Manages hardware and software packages and efficient networks administration. ICT infrastructure budgeting, procurement and asset control.</p>
+        <p>June 2008 – August 2015 | <em>MOLPay SDN BHD | CORPORATE ACCOUNT MANAGER (IT CONSULTANT) </em></p>
+        <p>Managing large/corporate merchant, including regional partnership collaboration.Regional channels expansion, both card & 
+           non-card, via mapping the landscape & defining the strategies.Managing partnership application and negotiating agreements. Well verse with commercial agreement & provide necessary advise to the legal from the perspective of business while maintaining the best interest of both parties.Pricing negotiation ,Coordinating the integration process and engineering the UI/UX between in house & service provider and technical team.</p>
+
+        <p>June 2006 - October 2008 | <em>MULLTECH ENTERPRISE | ASSISTANT IT ENGINEER</em></p>
+        <p>PCB electronic box installation  .Setting up technical , Programming and IT related task to selected companies .
+              Troubleshooting and technician on selected machines .  </p>
+      </section>
+      <section>
+        <h1>Technical Skills</h1>
+        <ul class="skill-set">
+          <li>SERVER MAINTENANCE</li>
+          <li>SALES & MARKETING</li>
+          <li>PROGRAMMING</li>
+          <li>INFORMATION TECHNOLOGIES</li>
+          <li>ELECTRICAL AND ELECTRONIC</li>
+          <li>FULL STALK DELEVOPING</li>
+          <li>VUEJS</li>
+          <li>UI Design</li>
+          <li>CSS</li>
+          <li>JAVA SCRIPT</li>
+          <li>RESPONSIVE WEB DESIGN</li>
+        </ul>
+      </section>
+      <section>
+        <h1>References</h1>
+        <p> Mr. Oon Wee Keong  |  019 - 2275932  |  <em> MOLPay Sdn Bhd  |  COO  </em></p>
+        
+        <p> Mr. Anbalagan  | 012 - 3216673  |  <em> MULLTECH ENTERPRISE  |  MANAGER  </em></p>
+
+        <p> Mr. Saravanan  |   012-3095061  |  <em> KAAPPU DOT COM SDN BHD  |  MANAGER  </em></p>
+      </section>
+            <section>
+        <h1>Personal Interests</h1>
+        <ul class="skill-set">
+          <li>BOOKS</li>
+          <li>GAMES</li>
+          <li>PLAYING VEENA</li>
+          <li>LEARNING LANGUAGE</li>
+          <li>HEALTH & NUTRITION</li>
+          <li>READING</li>
+        </ul>
+      </section>
+      <section>
+        <div class="handmade">
+          <p>handmade by <em> KESAVAN</em></p>
+        </div>
+      </section>
+    </div>
+    
+  </div>
+  </div>
+  
+  
+</div>
+</div>
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+
+
+
+      
+    </section>
+    
+  </div>
+  
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 kesavan,All Rights Reserved.
+    
+  </div>
+  
+</footer>
+
+
+
+</body>
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+

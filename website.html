@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style type="text/css">
+  .bg-trans{
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+  }
+
+  .jumbotron{
+    background-image: url('landscape.jpg');
+    background-size: cover;
+    color: white;
+    height: 600px;
+    padding-top: 200px;
+  }
+
+
+  .template1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(91, 115, 255);
+    width:28%;height:140px;
+    margin:auto auto auto 50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius:10px;
+}
+
+
+.template2{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(91, 115, 255);
+    width:28%;
+    height:140px;
+    margin:auto;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius:10px;
+}
+
+
+.template3{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(91, 115, 255);
+    width:28%;
+    height:140px;
+    margin:auto 50px auto auto;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius:10px;
+}
+
+
+
+
+
+
+
+}
+
+#container{
+    width:80%;
+    max-width:1350px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border: 1.5px solid rgba(91, 115, 255,0.5);
+    margin:auto;
+    margin-top:40px;
+    border-radius:40px;
+    padding:10px;
+}
+
+
+#features{
+    width:100%;
+    background-color:rgb(255, 255, 255);
+    border-radius:10px;
+    display:flex;
+    flex-direction:row;
+    margin-bottom:25px;
+    margin-top: 50px;
+}
+
+.margins{
+    margin:auto 20px auto 20px;
+}
+
+
+
+#pricing{
+    width:100%;
+    max-width:1350px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border: 10px solid rgba(91, 115, 255,0.5);
+    margin:auto;
+    margin-top:150px;
+    margin-bottom:40px;
+    border-radius:40px;
+    padding:5px;
+    height: 350px;
+}
+/*media queries*/
+@media screen and (max-width:600px){
+    .column-text{
+        font-size:0.3em;
+    }
+}
+
+
+h2 {
+
+      color: rgb(127,127 , 127);
+      font-size: 30;
+      text-align: center;
+
+    }
+
+    
+
+    
+      p{
+      text-align: justify;
+    }
+
+    th,td{
+
+      background-color: rgb(108,173,78);
+      color: white;
+    }
+
+
+
+    th,td{
+
+      border: lightgrey 1px solid;
+      padding: 8px;
+    }
+
+    table{
+
+      border-collapse: collapse;
+      margin-left: 80px;
+      margin-top: 60px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photo1{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    width:28%;height:140px;
+    margin:auto auto auto 50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius:30px;
+    margin:auto 50px auto auto;
+    font-size:1.3em;
+    text-align: center;
+    radius: 50px;
+
+}
+
+
+
+
+.photo2{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    width:28%;height:140px;
+    margin:auto auto auto 50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius:10px;
+    margin:auto 50px auto auto;
+    font-size:1.3em;
+    text-align: center;
+}
+
+
+
+
+.photo3{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+    width:28%;height:140px;
+    margin:auto auto auto 50px;
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius:10px;
+    margin:auto 50px auto auto;
+    font-size:1.3em;
+    text-align: center;
+}
+
+
+#photo{
+    width:100%;
+    
+    border-radius:10px;
+    display:flex;
+    flex-direction:row;
+    margin-bottom:250px;
+    margin-top: 50px;
+
+}
+
+.column-text-1{
+text-align: center;
+}
+
+
+.img-fluid1{
+  border-radius: 10px;
+}
+
+.img-fluid2{
+  border-radius: 80px;
+}
+
+.img-fluid3{
+  border: 5px solid whitesmoke;
+       
+}
+
+
+
+form {
+  border: 4px solid #f1f1f1;
+}
+
+
+.container1 {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+
+input[type=submit] {
+  background-color: #0000FF;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+  background-color: #2c292f;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 30%;
+}
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+  width: 30%;
+}
+
+.footer-distributed h3 span{
+  color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 31px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:5px;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #e0ac1c;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 35px;
+  margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+</style>
+    <title>Bootstrap Project</title>
+  </head>
+  <body>
+    <h1></h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Company Name</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="#" >Pricing</a>
+        </li>
+        <li>
+          <a class="nav-link " href="#" >Contact</a>
+        </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+<div class="rounded-lg text-center jumbotron ">
+  <h1 class="display-4">Company Name</h1>
+  <p class="lead">Tagline message</p>
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+   <a class="btn btn-primary btn-lg" href="#" role="button">Sign In</a>
+   <a class="btn btn-primary btn-lg" href="#" role="button">Sign up</a>
+</div>
+<section id="about" class="my-5">
+  <div class="container">
+  <div class="row py-5">
+    <div class="col-5">
+     <img src="mock_ipad.jpg" class="img-fluid">
+    </div>
+    <div class="col-7">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+       </div> 
+     </div>
+     <hr>
+       <div class ="row py-5">
+        <div class="col-7">
+      <h2>Lorem ipsum dolor sit amet</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+       </div>
+
+       <div class="col-5">
+        <img src="mock_nexus.jpg" class="img-fluid">
+       </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+ <section id="container">
+ <p style="font-weight:bold;font-size:1.3em;margin-left: 600px;">OUR FEATURES</p>
+ 
+ <section id="features">
+         <div class="template1">
+             <div class="margins">
+                 <p class="column-text">  FAST SHIPPING</p>
+                 <p style="color:white;">  Expect your package in less than 3 business days & IT'S FREE!</p>
+             </div>
+         </div>
+         <div class="template2">
+             <div class="margins">
+                 <p class="column-text">GREAT CUSTOMER SUPPORT</p>
+                 <p style="color:white;">We'll assign someone to meet your requirements regarding design and size.</p>
+             </div>
+         </div>
+         <div class="template3">
+             <div class="margins">
+                 <p class="column-text">QUALITY </p>
+                 <p style="color:white;">Our quality are made out of top material. It's not just about design!</p>
+             </div>
+         </div>
+     </section>
+
+ </section>
+
+<h2>Table</h2>
+<table>
+
+  <tr>
+
+    <th width="400px">Free Plan</th>
+    <th width="400px">Standard Plan</th>
+    <th width="400px">Premium Plan</th>
+
+</tr>
+
+<tr>
+
+
+<td height="70px">MYR 30</td>
+<td height="70px">MYR 50</td>
+<td width="70px">MYR 100</td>
+
+</tr>
+
+
+
+</table>
+
+
+<table class="w3-table w3-striped">
+
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+</tr>
+<tr>
+  <td>Jill</td>
+  <td>Smith</td>
+  <td>50</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+  
+
+ <section id="photo">
+
+    
+                 <div class="photo1">
+                  <div class="margins">
+                 <img src="jon.png" class="img-fluid1">
+                      <p style= "font: bold;">Jonny Doo</p>
+                      <p style="font-size: 1.0em;color: black;"> CEO </p>
+                      
+                      
+                 </div>
+             </div>
+             <div class="photo2">
+              <div class="margins">
+                 <img src="jon.png" class="img-fluid2">
+                    <p style= "font: bold;">Jonny Doo</p>
+                    <p style="font-size: 1.0em;color: black;"> CEO </p>
+                 </div>
+
+
+
+             </div>
+             <div class="photo3">
+              <div class="margins">
+                 <img src= jon.png class="img-fluid3" >
+                     <p style= "font: bold;">Jonny Doo</p>
+                    <p style="font-size: 1.0em;color: black;"> CEO </p>
+                 </div>
+             </div>
+         </div>
+   </section>
+
+</section>
+
+
+  
+ <form >
+ 
+    <p style="font-weight:bold;font-size:1.3em;text-align: center;"> STAY CONNECTED WITH US, JOIN THE NEWSLETTER TO RECEIVE FRESH</p>
+    
+
+
+  <div class="container1" style="background-color:white">
+    <input type="text" placeholder="Your Name" name="name" required>
+    <input type="text" placeholder="Your Email " name="mail" required>
+    <label>
+     <input type="submit" value="JOIN NOW !">
+    </label>
+  </div>
+
+ 
+</form>
+
+
+
+
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+          <img src="kesavan.jpg">
+          <h3>My<span>Portfolio</span></h3>
+
+        <p class="footer-links">
+          <a href="#">About Me</a>
+          |
+          <a href="#">Resume</a>
+          |
+          <a href="#">Projects</a>
+          |
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">© 2021 kesavan,All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>No.23, Jalan ks1/19
+             Bandar Parklands</span>
+            klang, Selangor - 41200</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+6 01 66780825 </p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@eduonix.com">kesavan@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About Me</span>
+          We offer all type of front-end and back-end programming .</p>
+        <div class="footer-icons" >
+          <a href="#"><i class="fa fa-facebook"></i></a>
+         
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          
+          <a href="#"><i class="fa fa-instagram"></i></a>
+
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        
+        </div>
+      </div>
+    </footer>
+
+</section>
+ 
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

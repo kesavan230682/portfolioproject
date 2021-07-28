@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style type="text/css">
+  .bg-trans{
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+  }
+  .jumbotron{
+    background-image: url('landscape.jpg');
+    background-size: cover;
+    color: white;
+    height: 600px;
+    padding-top: 200px;
+  }
+
+  .square {
+  height: 20px;
+  width: 20px;
+  background-color: #0000FF;
+  margin-right: 20px;
+
+}
+
+
+.box1 {
+    background: LightSalmon;
+    grid-area: advert;
+    height: 800px;
+    width: 500px;
+    background-color:#E2A76F;
+    margin-top: 100px;
+    margin-left: -117px;
+    object-position: static;
+
+  
+  
+  }
+
+
+  .box2 {
+    background: LightSalmon;
+    grid-area: advert;
+    height: 600px;
+    width: 400px;
+    
+    margin-top: -650px;
+    margin-left: 100px;
+    box-shadow: 0 4px 8px 0 rgba(2, 0, 0, 0.2), 0 10px 20px 0 rgba(19, 0, 0, 0.20);
+    position: relative;
+    background: linear-gradient(to bottom, #ECE5B6 90%, #FFFFFF 5%);
+
+    
+  
+  }
+
+  .container {
+  position: relative;
+}
+
+
+.text-block {
+  position: absolute;
+  bottom: -80px;
+  margin-right: 80px;
+  background-color: transparent;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 100px;
+  border-radius: 150%;
+  margin-left: 40px;
+  margin: center;
+
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120%;
+  height: 120%;
+  margin-top: 100px;
+  border-radius: 150%;
+
+  
+
+
+}
+
+.line-1 {
+  height: 3px;
+  width: 50px;
+  background: darkblue;
+  margin-left: 90px;
+  margin-right: auto;
+  margin-bottom:40px ;
+}
+
+  
+.name-1{
+
+  margin-top: -5px;
+  margin-left: 40px;
+  margin-right: 15px;
+  width: 300%;
+  height: 300%;
+  color: black;
+  font-size: 200%;
+  font-family: Cursive;
+  font-size-adjust: 50px;
+  
+}
+
+
+.name-2{
+  margin-top: -5px;
+  margin-left: -52px;
+  margin-right:70px;
+  margin-bottom: -10px;
+  width: 300%;
+  height: 300%;
+  color: black;
+  font-size: 200%;
+  font-family: Monospace;
+  font-size-adjust: 50px
+
+
+}
+
+.fa {
+  padding: 15px;
+  margin-bottom: -150px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-left:-0.5px;
+  border-radius: 50%;
+  margin-top: -1000px;
+
+  
+  
+
+  
+   
+
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left:-25px;
+  margin-bottom: -1000px;
+  margin-top: 50px;
+
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  margin-right:-30px ;
+  margin-bottom: -200px;
+}
+
+.container-1{
+float: right;
+  margin-left: 700px;
+  margin-top: -600px;
+}
+
+.name-3{
+   font-size: 100px;
+   margin-left: 100px; 
+   font-family: fantasy;
+
+}
+
+.name-4{
+  font-size:30px ;
+  margin-left: 40px;
+  font-family:Sans-serif ;
+
+}
+
+
+  .button-1 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-1:hover {
+  background-color: RoyalBlue;
+}
+
+.button-2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-2:hover {
+  background-color: RoyalBlue;
+}
+
+.container pt-4
+{
+
+}
+  
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(#d16ba5, #e17497, #eb828b, #ee9183, #eda280, #f1ad7d, #f3b97b, #f3c67b, #f8d273, #fbdf6b, #f9ec64, #f4fb5f)
+}
+
+main {
+  height: 200vmin
+}
+
+h1 {
+  color: white;
+  font-family: system-ui, sans-serif;
+  font-size: 48px;
+  text-align: center
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+#scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px
+}
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+  background-color: #2c292f;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+
+.footer-distributed .footer-left{
+  width: 30%;
+}
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+
+
+.footer-distributed .footer-left img{
+  width: 30%;
+}
+
+.footer-distributed h3 span{
+  color:  #e0ac1c;
+}
+
+
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+
+
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 31px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:5px;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #e0ac1c;
+  text-decoration: none;;
+}
+
+
+
+
+.footer-distributed .footer-right{
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+.footer-distributed .footer-icons a{
+  display: inline;
+  width: 35px;
+  height: 35px;
+  
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 1px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+
+
+
+@media (max-width: 880px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+
+
+</style>
+    <title>My Portfolio</title>
+  </head>
+
+
+  <body>
+    <h1></h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="square">
+          </div>
+
+
+
+     <a> <strong>KESAVAN</strong>  /  Full Stack Developer </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio.html#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_aboutme.html">ABOUT ME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio.resume.html">RESUME</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_project.html" >PROJECTS</a>
+        </li>
+        <li>
+          <a class="nav-link " href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_contact.html" >CONTACT</a>
+        </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+
+<section>
+<div class="container">
+
+  
+  <div class="box1"></div>
+
+  <div class="box2">
+     <div class="text-block">
+<img src="kesavan.jpg"  height="20%" width="20%" alt=""  class="center" ;>
+</br>
+
+<div class="name-1"><strong>KESAVAN</strong>
+
+</div>
+
+</br>
+
+<div class="line-1"></div>
+ 
+<div class="name-2" >FULL STACK DEVELOPER </div>
+
+
+
+
+
+
+    <div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+ <a href="https://www.facebook.com/kesavan.varadhan" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/K3S4V4N" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/kesavan-varadhan-2364a052/" class="fa fa-linkedin"></a>
+      <a href="https://www.youtube.com/channel/UCe-V7M6rRkpS4gotxCuyFPg" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/dcallme7/" class="fa fa-instagram"></a>
+
+
+</div>
+
+</section>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+
+
+    
+      
+<div class= "container-1">
+ <div class="col col-10">
+<div class="columns">
+  <div class="name-3" > HELLO </div>
+  <div class="name-4" > Here's who I am & what I do </div>
+
+
+
+ 
+
+  <br/>
+<p> Hi, i'm Kesavan from Klang,Selangor .I'm graduated in Master of Information Technology in UNITAR .
+Currently I’m exploring under  corporate company as ICT Specialist and i'm full stack developer too .
+
+</p>
+
+ 
+
+<p>I am creative, hardworking,responsible and trustworthy; an outgoing and cheerful person. I am ambitious and result oriented person and like to grow with the organization .
+</p>
+
+
+
+
+
+
+
+</div>
+
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
+
+
+
+
+ <footer class="footer-distributed">
+
+      <div class="footer-left">
+          <img src="kesavan.jpg">
+          <h3>My<span>Portfolio</span></h3>
+
+        <p class="footer-links">
+          <a href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_aboutme.html">About Me</a>
+          |
+          <a href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio.resume.html">Resume</a>
+          |
+          <a href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_project.html">Projects</a>
+          |
+          <a href="file:///C:/Users/Kesava/Documents/BATCH24/MODULE1/portfolio/portfolio_contact.html">Contact</a>
+        </p>
+
+        <p class="footer-company-name">© 2021 kesavan,All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>No.23, Jalan ks1/19
+             Bandar Parklands</span>
+            klang, Selangor - 41200</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+6 01 66780825 </p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@eduonix.com">kesavan@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About Me</span>
+          I'm offer all type of front-end and back-end programming .</p>
+        <div class="footer-icons" >
+          <a href="https://www.facebook.com/kesavan.varadhan"><i class="fa fa-facebook"></i></a>
+         
+          <a href="https://twitter.com/K3S4V4N"><i class="fa fa-twitter"></i></a>
+          
+          <a href="https://www.linkedin.com/in/kesavan-varadhan-2364a052/"><i class="fa fa-linkedin"></i></a>
+          
+          <a href="https://www.youtube.com/channel/UCe-V7M6rRkpS4gotxCuyFPg"><i class="fa fa-youtube"></i></a>
+
+          <a href="https://www.instagram.com/dcallme7/"><i class="fa fa-instagram"></i></a>
+        
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+</html>
